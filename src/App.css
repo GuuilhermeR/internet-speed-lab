@@ -1,0 +1,430 @@
+.app-shell {
+  min-height: 100vh;
+  color: #ecf6f4;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(39, 224, 189, 0.22), transparent 30rem),
+    radial-gradient(circle at 88% 12%, rgba(246, 189, 69, 0.14), transparent 26rem),
+    linear-gradient(180deg, #07100f 0%, #0b1514 48%, #08100f 100%);
+}
+
+.page {
+  width: min(1240px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 22px 0 36px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.brand-mark {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: #07100f;
+  background: #27e0bd;
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(39, 224, 189, 0.24);
+}
+
+.brand-mark .anticon {
+  font-size: 24px;
+}
+
+.eyebrow {
+  display: block;
+  color: #82f0de;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.topbar h1.ant-typography,
+.console-header h2.ant-typography,
+.section-heading h3.ant-typography {
+  margin: 0;
+}
+
+.topbar h1.ant-typography {
+  color: #f8fffd;
+  font-size: clamp(22px, 2.4vw, 34px);
+  line-height: 1.04;
+}
+
+.status-alert {
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.dashboard {
+  display: grid;
+  gap: 14px;
+}
+
+.hero-panel,
+.panel,
+.metric-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(13, 29, 28, 0.92);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+}
+
+.hero-panel {
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(39, 224, 189, 0.13), rgba(255, 255, 255, 0.04)),
+    rgba(255, 255, 255, 0.055);
+}
+
+.console-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.console-header h2.ant-typography {
+  color: #ffffff;
+  font-size: clamp(34px, 4.5vw, 58px);
+  line-height: 0.98;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  align-items: center;
+  max-width: 420px;
+  color: rgba(236, 246, 244, 0.72);
+}
+
+.test-stage {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(280px, 1.05fr) minmax(220px, 0.9fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.speed-card,
+.center-console {
+  min-height: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: rgba(5, 18, 17, 0.9);
+  border-radius: 8px;
+}
+
+.speed-card {
+  display: flex;
+  padding: 22px;
+  flex-direction: column;
+}
+
+.speed-card .anticon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  margin-bottom: auto;
+  color: #07100f;
+  background: #f6bd45;
+  border-radius: 8px;
+  font-size: 23px;
+}
+
+.primary-speed .anticon {
+  background: #27e0bd;
+}
+
+.speed-card span {
+  display: block;
+  color: #cfe5e0;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.speed-card strong {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.32);
+  font-size: clamp(54px, 6vw, 86px);
+  line-height: 0.94;
+}
+
+.speed-card small {
+  display: block;
+  max-width: 280px;
+  margin-top: 12px;
+  color: #c3d8d4;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.center-console {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(39, 224, 189, 0.18), transparent 13rem),
+    rgba(5, 18, 17, 0.78);
+}
+
+.connection-score-progress .ant-progress-text,
+.connection-score-progress.ant-progress .ant-progress-text,
+.center-console .connection-score-progress .ant-progress-text,
+.connection-score-progress .ant-progress-indicator,
+.connection-score-progress.ant-progress .ant-progress-indicator,
+.center-console .connection-score-progress .ant-progress-indicator {
+  color: #ffffff !important;
+  font-size: 34px !important;
+  font-weight: 950;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+}
+
+.connection-score-progress svg text,
+.connection-score-progress svg tspan {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+  font-size: 34px !important;
+  font-weight: 950 !important;
+}
+
+.connection-score-progress .ant-progress-circle-trail,
+.connection-score-progress .ant-progress-circle-rail {
+  stroke: rgba(255, 255, 255, 0.28) !important;
+}
+
+.connection-score-progress .ant-progress-circle-path {
+  stroke-linecap: round;
+}
+
+.primary-test-button.ant-btn {
+  width: min(100%, 300px);
+  height: 58px;
+  margin-top: 18px;
+  border: 0;
+  color: #07100f;
+  background: #27e0bd;
+  box-shadow: 0 18px 42px rgba(39, 224, 189, 0.26);
+  font-size: 17px;
+  font-weight: 950;
+}
+
+.primary-test-button.ant-btn:hover,
+.primary-test-button.ant-btn:focus {
+  color: #07100f;
+  background: #7cf4dc;
+}
+
+.center-console p {
+  max-width: 360px;
+  margin: 18px 0 0;
+  color: #c7dcda;
+  line-height: 1.5;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.metric-card {
+  display: flex;
+  min-height: 184px;
+  padding: 18px;
+  flex-direction: column;
+  gap: 14px;
+  background: rgba(11, 27, 26, 0.94);
+}
+
+.metric-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  color: #07100f;
+  background: rgba(236, 246, 244, 0.92);
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.metric-label {
+  display: block;
+  color: #cfe5e0;
+  font-weight: 900;
+}
+
+.metric-card strong {
+  display: block;
+  margin-top: 6px;
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.metric-card strong small {
+  color: #d8ebe7;
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.metric-card p {
+  margin: 12px 0 0;
+  color: #bdd4d0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(280px, 0.75fr);
+  gap: 14px;
+}
+
+.panel {
+  padding: 18px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.section-heading > .anticon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: #07100f;
+  background: #27e0bd;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.section-heading h3.ant-typography {
+  color: #ffffff;
+}
+
+.detail-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.detail-list > div {
+  min-height: 74px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 8px;
+}
+
+.detail-list .ant-typography {
+  color: #bed4d0;
+}
+
+.detail-list strong {
+  display: block;
+  margin-top: 7px;
+  color: #ffffff;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.24);
+  overflow-wrap: anywhere;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.diagnostic-list {
+  display: grid;
+  gap: 12px;
+}
+
+.diagnostic-list > div {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 10px;
+  color: #c6dad6;
+  line-height: 1.45;
+}
+
+.diagnostic-list .anticon {
+  color: #27e0bd;
+  font-size: 19px;
+  padding-top: 2px;
+}
+
+@media (max-width: 1080px) {
+  .test-stage,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .speed-card,
+  .center-console {
+    min-height: 260px;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .page {
+    width: min(100% - 20px, 1240px);
+    padding-top: 12px;
+  }
+
+  .topbar,
+  .console-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-tags {
+    justify-content: flex-start;
+  }
+
+  .detail-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-panel,
+  .panel,
+  .metric-card,
+  .speed-card,
+  .center-console {
+    padding: 14px;
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .speed-card,
+  .center-console {
+    min-height: 220px;
+  }
+
+  .console-header h2.ant-typography {
+    font-size: 36px;
+  }
+}
